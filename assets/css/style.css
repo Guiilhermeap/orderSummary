@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 430px;
+  height: 680px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.212);
+  overflow: hidden;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.desc__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 2rem 2.8rem 0rem 2.8rem;
+}
+
+.img__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.imagem {
+  height: 210px;
+  width: 430px;
+}
+
+.titulo {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: hsl(223, 47%, 23%);
+  font-size: 30px;
+}
+
+.subtitulo {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 30px;
+}
+
+.music__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: hsla(225, 100%, 94%, 0.418);
+  border-radius: 10px;
+}
+
+.music--img {
+  display: flex;
+  padding: 20px;
+}
+
+.music {
+  width: 50px;
+}
+
+.plan {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: hsl(223, 47%, 23%);
+}
+
+.price {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: hsl(224, 23%, 55%);
+}
+
+.change__container {
+  padding: 0px 0px 0px 80px;
+}
+
+.change {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: hsl(245, 41%, 57%);
+}
+
+.button__container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 2.5rem;
+}
+
+.button {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 13px;
+  box-shadow: 0px 20px 15px 0px hsla(245, 68%, 64%, 0.178);
+  transition: all ease 0.3s;
+}
+
+.button:hover {
+  background-color: hsl(245, 41%, 57%);
+}
+
+.cancel {
+  padding-top: 35px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+
+.attribution {
+  text-align: center;
+  margin-top: 50rem;
+  font-family: "Outfit", sans-serif;
+  position: absolute;
+  font-size: 17px;
+  color: hsl(224, 23%, 55%);
+}
+
+
+.nome {
+  color: hsl(245, 41%, 57%);
+  text-decoration: none;
+}
+
+/* ============= MOBILE =============== */
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(../../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    width: 340px;
+    height: 575px;
+  }
+
+  .desc__container {
+    padding: 0;
+    width: 85%;
+    margin-top: 28px;
+  }
+
+
+  .imagem {
+    height: auto;
+    width: 340px;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+
+  .subtitulo {
+    font-size: 17px;
+  }
+
+  .music--img {
+    display: flex;
+    padding: 15px;
+  }
+
+  .music {
+    width: 50px;
+  }
+
+  .plan {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .change__container {
+    padding: 0px 0px 0px 55px;
+  }
+
+  .change {
+    font-size: 14px;
+  }
+
+  .button__container {
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+
+  .cancel {
+    padding-top: 24px;
+    font-size: 15px;
+  }
+
+  .attribution {
+    margin-top: 43rem;
+  }
+}
